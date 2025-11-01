@@ -73,7 +73,7 @@ const App: React.FC = () => {
     // Initialize Gemini AI client
     useEffect(() => {
         // Fix: As per coding guidelines, API key must be sourced from process.env.API_KEY. This resolves the error on import.meta.env.
-        const apiKey = process.env.API_KEY;
+        const apiKey = process.env.VITE_API_KEY;
         if (apiKey) {
             const genAI = new GoogleGenAI({ apiKey });
             setAi(genAI);
