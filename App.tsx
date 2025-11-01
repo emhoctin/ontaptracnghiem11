@@ -71,16 +71,16 @@ const App: React.FC = () => {
     }, []);
     
     // Initialize Gemini AI client
-    useEffect(() => {
-        // Fix: As per coding guidelines, API key must be sourced from process.env.API_KEY. This resolves the error on import.meta.env.
-        const apiKey = process.env.VITE_API_KEY;
-        if (apiKey) {
-            const genAI = new GoogleGenAI({ apiKey });
-            setAi(genAI);
-        } else {
-            console.error("API_KEY environment variable not set.");
-        }
-    }, []);
+   useEffect(() => {
+    // Đúng cú pháp cho môi trường Vite
+    const apiKey = import.meta.env.VITE_API_KEY;
+    if (apiKey) {
+        const genAI = new GoogleGenAI({ apiKey });
+        setAi(genAI);
+    } else {
+        console.error("API Key chưa được cấu hình. Hãy kiểm tra file .env");
+    }
+}, []);
 
     const questionsByTopic = useMemo(() => {
         return allQuestions.reduce((acc, q) => {
