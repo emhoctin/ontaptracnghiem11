@@ -58,5 +58,36 @@ export const INFORMATICS_TOPICS: Topic[] = [
     subjectId: 'informatics_11',
     name: 'Bài 9: Giao tiếp an toàn trên Internet',
     description: 'Nhận biết các nguy cơ lừa đảo, bảo vệ thông tin cá nhân và tuân thủ các quy tắc ứng xử văn minh trên mạng.'
+  },
+   {
+    id: 'topic_cs_11_ud_10',
+    subjectId: 'informatics_11',
+    name: 'Bài 10: Lưu trữ dữ liệu và khai thác thông tin',
+    description: ''
+  },
+   {
+    id: 'topic_cs_11_ud_11',
+    subjectId: 'informatics_11',
+    name: 'Bài 11: Cơ sở dữ liệu',
+    description: ''
+  },
+   {
+    id: 'topic_cs_11_ud_12',
+    subjectId: 'informatics_11',
+    name: 'Bài 12: Hệ quản trị CSDL và Hệ CSDL',
+    description: ''
+  },
+   {
+    id: 'topic_cs_11_ud_13',
+    subjectId: 'informatics_11',
+    name: 'Bài 13: CSDL quan hệ',
+    description: ''
+  },
+   {
+    id: 'topic_cs_11_ud_14',
+    subjectId: 'informatics_11',
+    name: 'SQL',
+    description: 'Nhận biết các nguy cơ lừa đảo, bảo vệ thông tin cá nhân và tuân thủ các quy tắc ứng xử văn minh trên mạng.'
   }
+  
 ];
